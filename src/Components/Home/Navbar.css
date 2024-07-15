@@ -72,3 +72,39 @@
     transition-property: background-color;
     transition: background-color ease-in 0.5s;
 }
+
+.dropdown{
+    display: none;
+}
+
+
+@media all and (max-width: 375px) {
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px;
+        width: 100%;
+        height: 80px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 60px;
+    }
+
+    .menu,
+    .try {
+        display: none;
+    }
+
+    .menu li #l1 {
+        font-size: 14px;
+    }
+
+    .dropdown-list {
+        position: static; /* Adjust as necessary */
+        background: none;
+        box-shadow: none;
+        width: auto;
+    }
+}

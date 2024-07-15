@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from "../Home/Footer";
 import Grid from "../../Grid";
 import SideBar from "./SideBar";
+import Section6 from "../Home/Section6";
 import "./Dashboard.css"
 
 
@@ -16,6 +17,7 @@ function Dashboard(){
            </video>
            <Grid/>
            <SideBar/>
+           <Section6/>
            <Footer/>
         </div>
     )

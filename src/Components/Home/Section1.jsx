@@ -25,11 +25,11 @@ function Salescopy() {
                 </p>
             </div>
             <ul className="call">
-                <li><Link to="#" id="call2">Try For Free</Link></li>
-                <li><Link to="#" id="call1">Access Clarity Now</Link></li>
+                <li><Link id="call2" to="/FreeAuth">Try For Free</Link></li>
+                <li><Link id="call1" to="/Pricing">Access Clarity Now</Link></li>
             </ul>
             <div className="software">
-                <p>Trusted to Interpret Videos & Images From</p>
+                <p>Trusted to Assist and Interpret Videos, Images and Data from</p>
                 <div className="complogo">
                     <div id="complog"><img src={softwareimg.img1} alt="Ansys"/></div>
                     <div id="complog"><img src={softwareimg.img2} alt="Abaqus"/></div>

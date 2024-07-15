@@ -1,6 +1,6 @@
 // FeedbackForm.js
 import React, { useState } from "react";
-import { db } from "./firebase.jsx";
+import { db } from "../../firebase";
 import { collection, addDoc } from "firebase/firestore";
 import "./Section6.css";
 

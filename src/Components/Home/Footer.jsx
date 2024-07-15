@@ -7,10 +7,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <nav className="footer-nav">
-          <Link href="#">About</Link>
+          <Link href="/About">About</Link>
           <Link href="#">Features</Link>
-          <Link to="/Dashboard">Dashboard</Link>
-          <Link href="#">Pricing</Link>
+          <Link to="/FreeAuth">Dashboard</Link>
+          <Link to="/Pricing">Pricing</Link>
           <Link href="#">MeanAs Help Center</Link>
         </nav>
         <p>&copy; 2024 MeanAs.com. All rights reserved.</p>

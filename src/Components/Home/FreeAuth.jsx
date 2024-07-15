@@ -1,13 +1,15 @@
-// src/components/Auth.jsx
 import React, { useState } from "react";
-import { auth } from "../firebase";
+import { auth } from '../../firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
+import "./Authentication.css";
 
-const Auth = () => {
+const FreeAuth = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSignUp, setIsSignUp] = useState(true);
   const [error, setError] = useState("");
+  const navigate = useNavigate(); // Hook for navigation
 
   const handleAuth = async (e) => {
     e.preventDefault();
@@ -15,8 +17,10 @@ const Auth = () => {
     try {
       if (isSignUp) {
         await createUserWithEmailAndPassword(auth, email, password);
+        navigate("/Dashboard"); // Navigate to pricing page after sign up
       } else {
         await signInWithEmailAndPassword(auth, email, password);
+        navigate("/Dashboard"); // Navigate to pricing page after sign in
       }
     } catch (error) {
       handleError(error);
@@ -45,32 +49,43 @@ const Auth = () => {
     }
   };
 
+  const image = {
+    MeanAsLogo: "NobgLogo.png",
+    vid1: "Gradient 2.mp4",
+  };
+
   return (
-    <div>
-      <h2>{isSignUp ? "Sign Up" : "Sign In"}</h2>
+    <div className="auth">
+      <video id="background-video" src={image.vid1} controls loop autoPlay muted />
+      <Link className="meanaslogo" to="/">
+        <img src={image.MeanAsLogo} alt="MeanAs Logo" />
+      </Link>
       {error && <p style={{ color: "red" }}>{error}</p>}
-      <form onSubmit={handleAuth}>
+      <form onSubmit={handleAuth} className="forms">
+        <label className="labs">Email:</label>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
+          placeholder="email@example.com"
           required
         />
+        <label className="labs">Password:</label>
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
+          placeholder="#MeanAs.ai"
           required
         />
-        <button type="submit">{isSignUp ? "Sign Up" : "Sign In"}</button>
+        <button type="submit">{isSignUp ? "Signup with Email" : "Signin with Email"}</button>
       </form>
+      <p id="or">OR</p>
       <button onClick={() => setIsSignUp(!isSignUp)}>
-        {isSignUp ? "Switch to Sign In" : "Switch to Sign Up"}
+        {isSignUp ? "Signin with Email" : "Signup with Email"}
       </button>
     </div>
   );
 };
 
-export default Auth;
+export default FreeAuth;

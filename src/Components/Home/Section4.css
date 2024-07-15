@@ -22,8 +22,8 @@
 
 .bill #free,#pro,#unique{
     border: 3px solid silver;
-    width: 320px;
-    height: 500px;
+    width: 350px;
+    height: auto;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.62); /* semi-transparent background */
     backdrop-filter: blur(10px); /* blur effect */
@@ -37,7 +37,7 @@
 }
 
 #unique{
-     height: 530px;
+     height: auto;
     margin-top: -30px;
     border: 5px solid #e7982d;
     box-shadow: 0 0 30px rgb(231, 152, 45);
@@ -63,7 +63,7 @@
     align-items: center;
     flex-direction: row;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: -5px;
 
 }
@@ -112,9 +112,12 @@
      justify-content: center;
      align-items: start;
      flex-direction: column;
+     margin-top: 5px;
+     margin-bottom: -35px;
  }
  .pack li p{
      font-size:14px;
+     font-weight: 500;
  }
 
  .pack li{
@@ -161,4 +164,10 @@
 
   .go:hover{
       color: #ff8800;
+  }
+
+  .pack #pri{
+    color:black;
+    font-size: 14px;
+    font-weight: 500;
   }

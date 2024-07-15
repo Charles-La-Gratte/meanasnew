@@ -1,0 +1,86 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+    border: 2px solid silver;
+    width: 320px;
+    height: 450px;
+    margin-top: 80px;
+    border-radius: 20px;
+    
+  }
+  
+  .meanaslogo{
+    width: 230px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+
+    .meanaslogo img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+  #or {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #000925;
+    font-weight: 550;
+  }
+
+  .labs{
+    font-size: 18px;
+    color: #000925;
+    font-weight: 550;
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .forms {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    width: 260px;
+  }
+  
+  input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #ff8800;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px;
+    margin-bottom: 15px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #000925;
+  }
+  
+  button:hover {
+    background-color: #ff8800;
+    
+  }
+  
+  

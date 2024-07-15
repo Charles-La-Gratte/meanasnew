@@ -3,9 +3,14 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./Main.jsx";
 import Dashboard from "./Components/DashBoard/Dashboard";
-//import Auth from "./components/Auth";
-// import Subscription from "./components/Subscription";
-// import Upload from "./components/Upload";
+import Preprocess from './Components/DashBoard/Pre-process.jsx';
+import Errorchecker from './Components/DashBoard/Errorchecker.jsx';
+import Postprocess from './Components/DashBoard/Post-Process.jsx';
+import Authentication from './Components/Home/Authentication.jsx';
+import FreeAuth from './Components/Home/FreeAuth.jsx';
+import Pricing from './Components/Home/Pricing.jsx';
+import About from './Components/Home/About.jsx';
+
 
 function MeanAsApp() {
   return (<div className='App'>
@@ -13,9 +18,13 @@ function MeanAsApp() {
                     <Routes>
                       <Route index path="/" element={<Home/>}/>
                       <Route index path="/Dashboard" element={<Dashboard/>}/>
-                      {/*<Route path="/auth" component={Auth} />*/}
-                      {/*<Route path="/subscribe" component={Subscription} />*/}
-                      {/*<Route path="/upload" component={Upload} />*/}
+                      <Route index path="/Preprocess" element={<Preprocess/>}/>
+                      <Route index path="/Errorchecker" element={<Errorchecker/>}/>
+                      <Route index path="/Postprocess" element={<Postprocess/>}/>
+                      <Route index path="/Authentication" element={<Authentication/>}/>
+                      <Route index path="/FreeAuth" element={<FreeAuth/>}/>
+                      <Route index path="/Pricing" element={<Pricing/>}/>
+                      <Route index path="/About" element={<About/>}/>
                     </Routes>
                 </Router>
            </div>)

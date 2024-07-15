@@ -5,7 +5,6 @@
     flex-direction: column;
 }
 
-/* Container for the video and content */
 .video-background {
   position: relative;
   width: 100%;
@@ -13,7 +12,7 @@
   overflow: hidden;
 }
 
-/* Video element styling */
+
 #background-video {
   position: fixed;
   top: 50%;
@@ -23,4 +22,5 @@
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-/*hi dev*/
+
+
