@@ -4,11 +4,17 @@ import './index.css';
 import MeanAsApp from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import { BrowserRouter as Router } from 'react-router-dom'; // Importer BrowserRouter
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <MeanAsApp />
-  </React.StrictMode>
+
+    <Router>
+      <MeanAsApp />
+    </Router>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
