@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./App.css";
-import { BrowserRouter as  Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from "./Main.jsx";
 import Dashboard from "./Components/DashBoard/Dashboard";
 import Preprocess from './Components/DashBoard/Pre-process.jsx';
