@@ -19,7 +19,7 @@ function SideBar() {
         <div className='fullbar'>
             <div className="flatbar">
                 <div id="right">
-                    <div className="allicon"><img id="das" src={dashimg.not} alt="#"/></div>
+                    <div className="allicon"><img id="das" src={dashimg.not} alt=""/></div>
                 </div>
                 <div id="beside">
                     <div className="allicon"><img id="das" src={dashimg.user} alt="#"/></div>
@@ -27,18 +27,18 @@ function SideBar() {
             </div>
             <div className="sidebar">
                 <Link className="compilogo" to="/">
-                    <img src="NobgLogo.png"/>
+                    <img src="NobgLogo.png" alt=""/>
                 </Link>
                 <ul className="dashy">
-                    <Link className="dashli" to="/Dashboard"><div className="dash"><img id="das" src={dashimg.over}/></div>Overview</Link>
-                    <Link className="dashli"><div className="dash"><img id="das" src={dashimg.proj}/></div>Projects</Link>
-                    <Link className="dashli"><div className="dash"><img id="das" src={dashimg.team}/></div>Team Connect</Link>
-                    <Link className="dashli"><div className="dash"><img id="das" src={dashimg.assis}/></div>AI Assistant</Link>
+                    <Link className="dashli" to="/Dashboard"><div className="dash"><img id="das" src={dashimg.over} alt=""/></div>Overview</Link>
+                    <Link className="dashli"><div className="dash"><img id="das" src={dashimg.proj} alt=""/></div>Projects</Link>
+                    <Link className="dashli"><div className="dash"><img id="das" src={dashimg.team} alt=""/></div>Team Connect</Link>
+                    <Link className="dashli"><div className="dash"><img id="das" src={dashimg.assis} alt=""/></div>AI Assistant</Link>
                 </ul>
                 <Link id="upgra">
                     <div>
                         <div className="allicon">
-                            <img id="das" src={dashimg.upgrad} alt="#"/>
+                            <img id="das" src={dashimg.upgrad} alt=""/>
                         </div>
                         <h3>Upgrade to Unlimited Plan</h3>
                     </div>
@@ -52,19 +52,19 @@ function SideBar() {
             <div className="select">
                 <div id="box">
                     <Link id="opt" to="/Preprocess">
-                        <div className="allbox"><img id="das" src={dashimg.pre}/></div>
+                        <div className="allbox"><img id="das" src={dashimg.pre} alt=""/></div>
                         <p>Clarity & Accuracy For Pre-Processing</p>
                     </Link>
                 </div>
                 <div id="box" >
                     <Link id="opt" to="/Errorchecker">
-                        <div className="allbox"><img id="das" src={dashimg.error}/></div>
+                        <div className="allbox"><img id="das" src={dashimg.error} alt=""/></div>
                         <p>FEA/CFD Analysis Error Solutions</p>
                     </Link>
                 </div>
                 <div id="box">
                     <Link id="opt" to="/Postprocess">
-                        <div className="allbox"><img id="das" src={dashimg.post}/></div>
+                        <div className="allbox"><img id="das" src={dashimg.post} alt=""/></div>
                         <p>Clarity & Accuracy For Post-Processing</p>
                     </Link>
                 </div>

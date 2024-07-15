@@ -17,26 +17,26 @@ function Defaultbars(){
         <div classname="defaultbars">
             <div className="flatbars">
                 <div id="rights">
-                    <div className="allicons"><img id="dass" src={dashimg.not} alt="#"/></div>
+                    <div className="allicons"><img id="dass" src={dashimg.not} alt=""/></div>
                 </div>
                 <div id="besides">
-                    <div className="allicons"><img id="dass" src={dashimg.user} alt="#"/></div>
+                    <div className="allicons"><img id="dass" src={dashimg.user} alt=""/></div>
                 </div>
             </div>
             <div className="sidebars">
                 <Link className="compilogos" to="/">
-                    <img src="NobgLogo.png"/>
+                    <img src="NobgLogo.png" alt=""/>
                 </Link>
                 <ul className="dashys">
-                    <Link className="dashlis" to="/Dashboard"><div className="dashs"><img id="dass" src={dashimg.over}/></div>Overview</Link>
-                    <Link className="dashlis"><div className="dashs"><img id="dass" src={dashimg.proj}/></div>Projects</Link>
-                    <Link className="dashlis"><div className="dashs"><img id="dass" src={dashimg.team}/></div>Team Connect</Link>
-                    <Link className="dashlis"><div className="dashs"><img id="dass" src={dashimg.assis}/></div>AI Assistant</Link>
+                    <Link className="dashlis" to="/Dashboard"><div className="dashs"><img id="dass" src={dashimg.over} alt=""/></div>Overview</Link>
+                    <Link className="dashlis"><div className="dashs"><img id="dass" src={dashimg.proj} alt=""/></div>Projects</Link>
+                    <Link className="dashlis"><div className="dashs"><img id="dass" src={dashimg.team} alt=""/></div>Team Connect</Link>
+                    <Link className="dashlis"><div className="dashs"><img id="dass" src={dashimg.assis} alt=""/></div>AI Assistant</Link>
                 </ul>
                 <Link id="upgras">
                     <div>
                         <div className="allicons">
-                            <img id="dass" src={dashimg.upgrad} alt="#"/>
+                            <img id="dass" src={dashimg.upgrad} alt=""/>
                         </div>
                         <h3>Upgrade to Unlimited Plan</h3>
                     </div>

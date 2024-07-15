@@ -17,7 +17,7 @@ function Postprocess(){
 
     const [images, setImages] = useState([]);
     const [goal, setGoal] = useState('');
-    const [response, setResponse] = useState('');
+    const [response] = useState('');
     const [analysisType, setAnalysisType] = useState('');
   
     const handleImageChange = (e) => {

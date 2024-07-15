@@ -24,7 +24,7 @@ function Workprocess() {
                     </div>
                 </div>
                 <div className="testimony">
-                    <div><img src={quo.quote}/></div>
+                    <div><img src={quo.quote} alt=""/></div>
                     <p id="testa">Amidst confusion over FEA/CFD analysis during my internship, MeanAs provided invaluable clarity from start to finish. Their expert guidance enabled me to deliver high-quality results swiftly, impressing my boss and aligning my research with stringent deadlines.
                         MeanAs not only enhanced my understanding but also elevated <br/> my project's credibility, ensuring a successful outcome and advancing my career in engineering analysis.</p>
                     <p id="testam">Dan Hills</p>
