@@ -16,7 +16,7 @@ function Errorchecker() {
 
   const [images, setImages] = useState([]);
   const [goal, setGoal] = useState('');
-  const [response, setResponse] = useState('');
+  const [response] = useState('');
 
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files);
